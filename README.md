@@ -7,14 +7,10 @@ This adapter lets you use Vue as a template engine in [Fractal](http://fractal.b
 Install the adapter via NPM:
 
 ```
-npm i --save fractal-vue-adapter
+npm i --save swey/fractal-vue-adapter
 ```
 
-You have to add this adapter via github to your project, e.g. in the package.json:
-
-"@swey/fractal-vue-adapter": "swey/fractal-vue-adapter#v0.3.5",
-
-In your fractal.js just set the engine like this:
+#### In your fractal.js just set the engine like this:
 
 ```javascript
 const Vue = require('vue');
@@ -23,7 +19,7 @@ fractal.components.set('engine', '@swey/fractal-vue-adapter');
 fractal.components.set('ext', '.(vue|html)');
 ```
 
-In the fractal.js you can also add plugins, e.g.:
+#### In the fractal.js you can also add plugins, e.g.:
 
 ```
 Vue.use(require('./src/js/plugins/GlobalsPlugin'));
